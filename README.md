@@ -1,1 +1,1 @@
-"# AI_API_openAI_and_Json" 
+"ChatBot dùng data của json và dùng thư viện fuzzywuzzy để sô sánh độ chính xác của câu hỏi trong khi đưa vào và so sánh với câu hỏi trong data.json và nếu độ chính xác thấy hơn 70% thì câu hỏi được chuyển sang cho openai để trả lời " 
