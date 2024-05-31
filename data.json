@@ -1,0 +1,13 @@
+{
+  "hello": "Bạn cần gì ở tôi?",
+  "goodbye": "Tạm biệt!",
+  "thank you": "Không có gì!",
+  "id": 1,
+  "name": "Kai'sa",
+  "tier": "D",
+  "Lane": "Bot Lane - ADC",
+  "win_rate": "48.64%",
+  "pick_rate": "21.6%",
+  "ban_rate": "2.8%",
+  "matches": "313541"
+}

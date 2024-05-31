@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Trang Chatbot</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var form = document.querySelector('form');
+            form.addEventListener('submit', function (event) {
+                event.preventDefault();
+                var questionInput = document.getElementById('question');
+                var question = questionInput.value;
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', '/process_question');
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+                xhr.onload = function () {
+                    if (xhr.status === 200) {
+                        var data = JSON.parse(xhr.responseText);
+                        var answerDiv = document.getElementById('answer');
+                        answerDiv.textContent = data.answer;
+                    }
+                };
+                xhr.send('question=' + encodeURIComponent(question));
+            });
+        });
+    </script>
+</head>
+
+<body>
+    <h1>Chatbot</h1>
+    <form>
+        <input type="text" id="question" placeholder="Nhập câu hỏi của bạn" required>
+        <button type="submit">Gửi</button>
+    </form>
+    <div id="answer"></div>
+</body>
+
+</html>

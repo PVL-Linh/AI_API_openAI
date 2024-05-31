@@ -1,0 +1,7 @@
+streamlit
+fuzzywuzzy
+python-Levenshtein
+openai
+
+# pip install -r requirements.txt
+#  streamlit run app.py
