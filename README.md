@@ -24,6 +24,7 @@ Chạy ứng dụng bằng lệnh sau:
 ```
 streamlit run app.py
 ```
+```
 Hoặc:
 streamlit run app_1.py
 ```
